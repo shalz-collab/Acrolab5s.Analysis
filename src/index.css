@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 210 11% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 210 11% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 11% 15%;
+
+    --primary: 152 45% 38%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 14% 95%;
+    --secondary-foreground: 210 11% 15%;
+
+    --muted: 210 14% 96%;
+    --muted-foreground: 210 8% 46%;
+
+    --accent: 152 45% 95%;
+    --accent-foreground: 152 45% 25%;
+
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 210 14% 89%;
+    --input: 210 14% 89%;
+    --ring: 152 45% 38%;
+
+    --radius: 0.5rem;
+
+    --corporate-dark: 210 11% 15%;
+    --corporate-gray: 210 8% 46%;
+    --corporate-light: 210 14% 96%;
+    --corporate-green: 152 45% 38%;
+    --corporate-green-light: 152 45% 95%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  .dark {
+    --background: 220 15% 8%;
+    --foreground: 210 20% 92%;
+
+    --card: 220 15% 11%;
+    --card-foreground: 210 20% 92%;
+
+    --popover: 220 15% 11%;
+    --popover-foreground: 210 20% 92%;
+
+    --primary: 152 45% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 220 12% 16%;
+    --secondary-foreground: 210 20% 92%;
+
+    --muted: 220 12% 16%;
+    --muted-foreground: 210 10% 60%;
+
+    --accent: 152 30% 15%;
+    --accent-foreground: 152 45% 70%;
+
+    --destructive: 0 62% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 12% 20%;
+    --input: 220 12% 20%;
+    --ring: 152 45% 45%;
+
+    --corporate-dark: 210 20% 92%;
+    --corporate-gray: 210 10% 60%;
+    --corporate-light: 220 12% 16%;
+    --corporate-green: 152 45% 45%;
+    --corporate-green-light: 152 30% 15%;
+
+    --sidebar-background: 220 15% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 12% 16%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 220 12% 20%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .hero-overlay {
+    background: linear-gradient(to right, hsl(210 11% 15% / 0.7), hsl(210 11% 15% / 0.3));
+  }
+
+  .section-padding {
+    @apply px-4 py-16 md:px-8 md:py-24 lg:px-16;
+  }
+}
