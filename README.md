@@ -101,4 +101,4 @@ This project is developed to create a professional online presence for Arcolab a
 
 **Shalini**
 
-* GitHub: https://github.com/your-userna
+* GitHub: https://github.com/shalz-collab
